@@ -1,0 +1,17 @@
+create DATABASE PatientDB; 
+use PatientDB; 
+
+create table Patient
+( 
+	PatientID varchar(50) PRIMARY KEY, 
+	PatientName varchar(50) NOT NULL, 
+	Country varchar(50) NOT NULL, 
+	Email varchar(50) 
+); 
+
+INSERT INTO Patient (PatientID, PatientName, Country, Email) VALUES
+('P1', 'John Doe', 'USA', 'john.doe@example.com'),
+('P2', 'Jane Smith', 'Canada', 'jane.smith@example.com'),
+('P3', 'Bob Johnson', 'UK', 'bob.johnson@example.com'),
+('P4', 'Alice Williams', 'Australia', 'alice.williams@example.com'),
+('P5', 'Charlie Brown', 'Germany', 'charlie.brown@example.com');

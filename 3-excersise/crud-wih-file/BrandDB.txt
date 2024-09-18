@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS BrandDB;
+USE BrandDB;
+
+CREATE TABLE IF NOT EXISTS Brands(
+  BID	int		AUTO_INCREMENT PRIMARY KEY,
+  Name	varchar(50) 	NOT NULL,
+  Link	varchar(200) 	NOT NULL
+);
+INSERT INTO Brands (Name, Link) VALUES 	
+	('Apple',	'https://www.apple.com/'),
+	('Sony',	'https://www.sony.com/en/'),
+	('Nokia',	'https://www.nokia.com/'),
+	('SamSung',	'https://www.samsung.com/vn/'),
+	('Xiaomi',	'https://www.mi.com/global/');   
+
+
+ALTER TABLE BRANDS ADD LOGO VARCHAR(255); 

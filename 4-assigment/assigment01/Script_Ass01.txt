@@ -1,0 +1,15 @@
+CREATE DATABASE CustomerDB;
+USE CustomerDB;
+
+CREATE TABLE Customer(
+	CCode	varchar(50) PRIMARY KEY,
+	CName	varchar(50),
+	CPhone	varchar(50),
+	CEmail	varchar(50)
+);
+INSERT INTO Customer VALUES 
+			('GC001','Hazem Abolrous','849-555-0139','Hazem@Digit.edu.vn'),
+			('GC002','Gabrielle Cannata','115-721-431','Gabrielle@@Digit.com'),
+			('GC003','Chris Cannon','231-212-342','Chris@Digit.com'),
+			('GC004','Joseph Cantoni','443-223-513','Joseph@Digit.com'),
+			('GC005','Pilar Ackerman','123-564-344','Pilar@Digit.com');
